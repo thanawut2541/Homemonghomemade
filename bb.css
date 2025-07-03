@@ -1,0 +1,89 @@
+* { box-sizing: border-box; margin:0; padding:0; }
+body { font-family: 'Sarabun', sans-serif; background:#fff; color:#333; }
+.site-header {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:20px; background:##d2f4e3; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+}
+.site-header .logo { font-size:1.5rem; font-weight:bold; }
+.site-header nav a {
+  margin:0 10px; text-decoration:none; color:#555;
+  font-weight:500;
+}
+header {
+  background-color: #d2f4e3; /* เขียวอ่อนมินิมอล */
+  padding: 20px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.collection { max-width:1000px; margin:40px auto; padding:0 20px; }
+.collection h1 { font-size:2rem; margin-bottom:20px; text-align:center; }
+.filter-bar { text-align:center; margin-bottom:30px; }
+.filter-bar button {
+  background:none; border:1px solid #ccc; padding:10px 20px;
+  margin:0 5px; border-radius:20px; cursor:pointer;
+  transition:0.2s;
+}
+.filter-bar button.active,
+.filter-bar button:hover { background:#e67e22; color:#fff; border-color:#e67e22; }
+
+.products-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(240px,1fr));
+  gap:30px;
+}
+.product-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 500px; /* กำหนดความสูงชัดเจน */
+  object-fit: cover; /* ควบคุมภาพให้ครอบเต็มกรอบ */
+  display: block;
+}
+.product-card h2 {
+  margin:15px 0 5px; font-size:1.1rem; color:#555;
+}
+.product-card p { color:#777; font-size:0.95rem; }
+
+footer {
+  background:#fff; padding:20px;
+  text-align:center; color:#666; font-size:0.9rem;
+  box-shadow:0 -2px 5px rgba(0,0,0,0.05);
+}
+/* ปุ่มทั่วไป */
+.btn-filter {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1rem;
+  text-decoration: none;
+  border: 2px solid #ccc;
+  color: #333;
+  background-color: #fff;
+  transition: 0.2s;
+  margin: 5px;
+}
+
+/* ปุ่มเมื่อ hover หรือ active */
+.btn-filter:hover,
+.btn-filter.active {
+  background-color: #e67e22;
+  color: #fff;
+  border-color: #e67e22;
+}
+
+/* ปุ่มที่ตั้งชื่อ class ว่า orange */
+.btn-filter.orange {
+  background-color: #e67e22;
+  color: #fff;
+  border-color: #e67e22;
+}
